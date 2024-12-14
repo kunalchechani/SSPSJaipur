@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.project.sspsjaipur.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_about"
+        android:name="com.project.sspsjaipur.ui.about.AboutFragment"
+        android:label="@string/menu_about"
+        tools:layout="@layout/fragment_about" />
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.project.sspsjaipur.ui.slideshow.SlideshowFragment"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_slideshow" />
+
+    <fragment
+        android:id="@+id/nav_contact"
+        android:name="com.project.sspsjaipur.ui.ContactFragment"
+        android:label="@string/menu_contact"
+        tools:layout="@layout/fragment_contact" />
+    <fragment
+        android:id="@+id/nav_view_entries"
+        android:name="com.project.sspsjaipur.ui.ViewEntriesFragment"
+        android:label="@string/menu_view_entry"
+        tools:layout="@layout/fragment_view_entries" />
+    <fragment
+        android:id="@+id/nav_map_view"
+        android:name="com.project.sspsjaipur.ui.MapsFragment"
+        android:label="@string/menu_map_view"
+        tools:layout="@layout/fragment_maps" />
+
+</navigation>

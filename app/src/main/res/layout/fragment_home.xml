@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/design_default_color_primary_variant"
+    tools:context=".ui.home.HomeFragment">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="412dp"
+        android:layout_height="277dp"
+        android:importantForAccessibility="no"
+        android:src="@drawable/banner"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/schoolName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:fontFamily="@font/aldrich"
+        android:text="@string/Name"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView3"
+        app:layout_constraintVertical_bias="0.415" />
+
+    <TextView
+        android:id="@+id/marqueeText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:padding="10dp"
+        android:scrollHorizontally="true"
+        android:singleLine="true"
+        android:text="AN INSTITUTION WHERE YOUNG MINDS LEARN TO THINK"
+        android:textColor="#E17A1A"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/schoolName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.95"
+        tools:ignore="HardcodedText" />
+
+    <ScrollView
+        android:layout_width="412dp"
+        android:layout_height="405dp"
+        android:layout_marginTop="19dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/schoolName">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/Achievement"
+                android:layout_width="260dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="337dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/aldrich"
+                android:text="Our Achievements :-"
+                android:textColor="#FFEB3B"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toTopOf="@+id/horizontalScrollView"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/schoolName"
+                app:layout_constraintVertical_bias="0.375"
+                tools:ignore="HardcodedText" />
+
+            <HorizontalScrollView
+                android:id="@+id/horizontalScrollView"
+                android:layout_width="410dp"
+                android:layout_height="252dp"
+                android:foregroundGravity="center_vertical"
+                android:importantForAccessibility="no"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/imageView3"
+                app:layout_constraintVertical_bias="0.768">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:foregroundGravity="center"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <!-- LinearLayout children -->
+
+
+                    <ImageView
+                        android:id="@+id/achievement1"
+                        android:layout_width="144dp"
+                        android:layout_height="247dp"
+                        android:layout_weight="1"
+                        android:importantForAccessibility="no"
+                        android:src="@drawable/achievement2" />
+
+                    <ImageView
+                        android:id="@+id/achievement2"
+                        android:layout_width="144dp"
+                        android:layout_height="247dp"
+                        android:layout_weight="1"
+                        android:importantForAccessibility="no"
+                        android:src="@drawable/achievements1" />
+
+                    <ImageView
+                        android:id="@+id/achievement3"
+                        android:layout_width="144dp"
+                        android:layout_height="247dp"
+                        android:layout_weight="1"
+                        android:importantForAccessibility="no"
+                        android:src="@drawable/achievements3" />
+
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <TextView
+                android:id="@+id/Houses"
+                android:layout_width="289dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="337dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/aldrich"
+                android:text="Our 5 Houses :- "
+                android:textColor="#FFEB3B"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toTopOf="@+id/horizontalScrollView"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/schoolName"
+                app:layout_constraintVertical_bias="0.375"
+                tools:ignore="HardcodedText" />
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingVertical="8dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <!-- Dynamic House Images -->
+                    <ImageView
+                        android:id="@+id/house1"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_marginEnd="8dp"
+                        android:contentDescription="House 1"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/house1" />
+
+                    <ImageView
+                        android:id="@+id/house2"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_marginEnd="8dp"
+                        android:contentDescription="House 2"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/house2" />
+
+                    <ImageView
+                        android:id="@+id/house3"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_marginEnd="8dp"
+                        android:contentDescription="House 3"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/house3" />
+
+                    <ImageView
+                        android:id="@+id/house4"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_marginEnd="8dp"
+                        android:contentDescription="House 4"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/house4" />
+
+                    <ImageView
+                        android:id="@+id/house5"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_marginEnd="8dp"
+                        android:contentDescription="House 5"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/house5" />
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
